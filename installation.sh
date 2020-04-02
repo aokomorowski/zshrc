@@ -1,8 +1,8 @@
 #! /bin/bash 
 
 # snap
-sudo pacman -Sy
-sudo pacman -S snapd
+sudo pacman -Sy --noconfirm 
+sudo pacman -S --noconfirm snapd
 sudo systemctl enable --now snapd.socket
 
 # VS Code
@@ -21,7 +21,7 @@ for ext in "${extensions[@]}"; do
 done
 
 #ohmyzsh
-sudo pacman -S zsh
+sudo pacman  -S --noconfirm zsh 
 chsh -s "$(command -v zsh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
 pip3 install thefuck --user
