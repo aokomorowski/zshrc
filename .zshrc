@@ -14,7 +14,6 @@ plugins=(
 ansible
 aws
 buffalo
-brew
 colored-man-pages
 colorize
 cp
@@ -29,7 +28,6 @@ history-substring-search
 npm
 npx
 nvm
-osx
 pip
 python
 thefuck
