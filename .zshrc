@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/akomorowski/.oh-my-zsh"
+export ZSH="/home/komor/.oh-my-zsh"
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
