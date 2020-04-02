@@ -1,7 +1,7 @@
 #! /bin/bash 
 
 # snap
-sudo pacman -S snapd
+sudo pacman -Sy snapd
 sudo systemctl enable --now snapd.socket
 
 # VS Code
