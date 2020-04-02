@@ -1,13 +1,15 @@
 #! /bin/bash 
 
 # snap
-sudo pacman -Sy snapd
+sudo pacman -Sy
+sudo pacman -S snapd
 sudo systemctl enable --now snapd.socket
 
 # VS Code
 
-sudo snap install code 
-extensions=(formulahendry.auto-close-tag
+sudo snap install code --classic
+extensions=(
+formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 ms-azuretools.vscode-docker
 ms-vscode.Go
