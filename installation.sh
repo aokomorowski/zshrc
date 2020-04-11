@@ -42,3 +42,16 @@ sudo snap install spotify
 sudo snap install docker
 sudo snap install slack --classic
 
+# Node.js
+
+sudo pacman -S nvm
+nvm install 14
+nvm use 14
+
+# Golang
+
+sudo pacman -S go
+
+mkdir ~/.grc
+wget https://raw.githubusercontent.com/aokomorowski/zshrc/master/grc.conf -O ~/.grc/
+wget https://raw.githubusercontent.com/aokomorowski/zshrc/master/conf.gotest -O ~/.grc/
