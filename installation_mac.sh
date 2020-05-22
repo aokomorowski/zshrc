@@ -35,7 +35,7 @@ fc-cache -vf ~/.local/share/fonts/
 mkdir ~/.config/fontconfig ~/.config/fontconfig/conf.d
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
-wget https://raw.githubusercontent.com/aokomorowski/zshrc/master/.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/aokomorowski/zshrc/master/.zshrc_mac -O ~/.zshrc
 
 
 
