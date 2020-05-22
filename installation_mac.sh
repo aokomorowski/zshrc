@@ -60,3 +60,5 @@ brew cask install firefox
 brew cask install spotify
 brew install docker docker-machine
 brew cask install virtualbox
+brew services start docker-machine
+
