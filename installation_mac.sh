@@ -54,6 +54,7 @@ wget https://raw.githubusercontent.com/aokomorowski/zshrc/master/conf.gotest -O 
 brew cask install slack
 brew cask install firefox
 brew cask install spotify
+brew install shellcheck
 brew install docker docker-machine
 brew cask install virtualbox
 brew services start docker-machine
