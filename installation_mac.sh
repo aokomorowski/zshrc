@@ -15,6 +15,7 @@ ms-azuretools.vscode-docker
 ms-vscode.Go
 redhat.vscode-yaml
 timonwong.shellcheck
+eamodio.gitlens
 )
 for ext in "${extensions[@]}"; do
     code  --install-extension "$ext"
