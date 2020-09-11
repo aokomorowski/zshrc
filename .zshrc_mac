@@ -37,3 +37,4 @@ zsh-syntax-highlighting
 source $ZSH/oh-my-zsh.sh
 
 alias go="grc go"
+alias docker-image-sort="docker images --format '{{.Size}}\t{{.Repository}}\t{{.Tag}}\t{{.ID}}' | sed 's/ //' | sort -h -r | column -t"
