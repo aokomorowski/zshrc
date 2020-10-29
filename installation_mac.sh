@@ -12,10 +12,16 @@ extensions=(
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 ms-azuretools.vscode-docker
-ms-vscode.Go
+golang.go
 redhat.vscode-yaml
 timonwong.shellcheck
 eamodio.gitlens
+amazonwebservices.aws-toolkit-vscode
+dahong.theme-bear
+james-yu.latex-workshop
+scalameta.metals
+hashicorp.terraform
+
 )
 for ext in "${extensions[@]}"; do
     code  --install-extension "$ext"
@@ -44,14 +50,20 @@ nvm use 14
 
 # Golang
 
-brew install go 
+brew install go
 
 mkdir ~/.grc
 wget https://raw.githubusercontent.com/aokomorowski/zshrc/master/grc.conf -O ~/.grc/
 wget https://raw.githubusercontent.com/aokomorowski/zshrc/master/conf.gotest -O ~/.grc/
 
+# Java 10
+
+brew cask install java8
+
 # essentials :P
 
+brew cask install postman
+brew install texlive
 brew cask install slack
 brew cask install firefox
 brew cask install spotify

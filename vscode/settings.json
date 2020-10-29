@@ -1,0 +1,34 @@
+{
+    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "FiraCode-Retina",
+    "git.confirmSync": false,
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "external": true,
+        "args": [
+            "serve"
+        ]
+    },
+    "git.autofetch": true,
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Hipster",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    }
+}
