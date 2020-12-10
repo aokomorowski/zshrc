@@ -1,6 +1,17 @@
-#! /bin/bash 
+#! /bin/bash
+
+
+echo "Installing Homebrew"
+echo | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+if ! command -v brew &> /dev/null
+then
+    echo "Brew could not be found"
+    exit
+fi
 
 # VS Code
+echo "Installing VS Code"
 brew cask install visual-studio-code
 
 cat << EOF >> ~/.bash_profile
@@ -21,16 +32,17 @@ dahong.theme-bear
 james-yu.latex-workshop
 scalameta.metals
 hashicorp.terraform
-
 )
 for ext in "${extensions[@]}"; do
+    echo "Installing $ext"
     code  --install-extension "$ext"
 done
 
 #ohmyzsh
+echo "Installing ZSH"
 brew install zsh
 brew install wget
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install thefuck
 git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
@@ -43,13 +55,13 @@ wget https://raw.githubusercontent.com/aokomorowski/zshrc/master/.zshrc_mac -O ~
 
 
 # Node.js
-
+echo "Installing NVM"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 nvm install 14
 nvm use 14
 
 # Golang
-
+echo "Installing Go!"
 brew install go
 
 mkdir ~/.grc
