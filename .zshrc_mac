@@ -25,6 +25,7 @@ git
 golang
 history
 history-substring-search
+kubectl
 npm
 npx
 nvm
